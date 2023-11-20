@@ -4,76 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gopher Recommendations</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color: #333;
-            color: white;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #444;
-            padding: 10px;
-            text-align: center;
-        }
-
-        nav a {
-            color: white;
-            text-decoration: none;
-            padding: 8px 16px;
-            margin: 0 8px;
-        }
-
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-
-        #myButton {
-            padding: 10px;
-            font-size: 16px;
-            cursor: pointer;
-        }
-
-        #searchBar {
-            padding: 8px;
-            font-size: 16px;
-        }
-    </style>
+    <link rel="stylesheet" href="app3.css">
 </head>
 <body>
 
-    <header>
-        <h1>Gopher Recommendations</h1>
-    </header>
+    <main>
+        <div class="search-container">
+            <h1>Gopher Recommendations</h1>
+            <form>
+                <input type="text" id="searchClass" name="searchClass" placeholder="Search for classes">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </main>
 
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
-    </nav>
-
-    <section>
-        <h2>Welcome to Gopher Recommendations!</h2>
-        <p>Discover the best recommendations for your interests.</p>
-        <input type="text" id="searchBar" placeholder="Search...">
-        <button id="myButton">Click me</button>
-    </section>
-
-    <script>
-        // JavaScript code
-        document.getElementById("myButton").addEventListener("click", function() {
-            alert("Button Clicked!");
-        });
-    </script>
+    <footer>
+        <p>&copy; 2023 Gopher Recommendations</p>
+    </footer>
 
 </body>
 </html>
